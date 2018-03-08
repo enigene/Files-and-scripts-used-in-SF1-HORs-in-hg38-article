@@ -1,0 +1,23 @@
+<h2>Description</h2>
+<p>Classification and monomer-by-monomer annotation of Suprachromosomal Family 1
+Alpha Satellite Higher-Order Repeats in human genome assembly.</p>
+<p><b>Sequencing/Assembly name:</b> GRCh38/hg38</p>
+<p><b>Assembly date:</b> 2013-12-17</p>
+<p><b>GenBank accession ID:</b> <a href="http://www.ncbi.nlm.nih.gov/assembly/GCA_000001405.15/" target="_blank">GCA_000001405.15</a></p>
+
+<h2>Methods</h2>
+Based on the phylogenetic and genomic analysis of SF1 in the hg38 genome assembly,
+alpha satellite monomer sequences were established as profiles in HMMER to create
+monomer-by-monomer annotation track for UCSC Genome Browser.
+<p></p>
+
+<h2>Credits</h2>
+<p>Lev I. Uralsky (Institute of Molecular Genetics, Moscow, Russia)</p>
+<p>Valery A. Shepelev (Institute of Molecular Genetics, Moscow, Russia)</p>
+<p>Ivan A. Alexandrov (Research Center of Mental Health, Moscow, Russia)</p>
+
+<h2>References</h2>
+<p>Please, cite this track as:</p>
+<p>
+
+</p>
