@@ -1,6 +1,6 @@
 # Alignments used in paper “Classification and monomer-by-monomer annotation of suprachromosomal family 1 alpha satellite higher-order repeats in hg38 human genome assembly”
 
-## Alignments with master HOR monomers and consensus for MSA monomers:
+## Alignments with master HOR monomers and consensus of MSA monomers:
 1. S1-master-HOR-spec-aln-with-div-cons.fas — all monomers with HOR-specific alignment;
 1. S1-master-HOR-auto-aln-with-div-cons-boxA.fas — separated A-type monomers auto aligned;
 1. S1-master-HOR-auto-aln-with-div-cons-boxB.fas — separated B-type monomers auto aligned;
