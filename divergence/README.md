@@ -46,7 +46,7 @@ find . -name "S1*.fas" -exec awk '/^>/{n++}END{print FILENAME,n}' {} >> seq-coun
 
 8. Make alignment
 `./align.sh` — in this [script](align.sh) we use [MEGACC](https://www.megasoftware.net/) with [MEGACC analysis options files](../MEGACC-analysis-options-files/).
-All alignments are placed in [alignments folder](alignments/).
+All alignments are placed in the [alignments folder](alignments/).
 
 9. Calculate divergence rate with [Divergence rate script](https://github.com/enigene/Divergence-rate)
 ```bash
