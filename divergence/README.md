@@ -26,7 +26,7 @@ awk -F"_" '{gsub(/hg38|range=| 5.+$/,"");print $1 $5}' ./GJ211907.1-chr6-5869224
 awk 'NR==1&&/^>/{printf("%s\n",$0)}NR>1&&/^>/{printf("\n%s\n",$0)}!/^>/{printf("%s",$0)}END{printf"\n"}' ./GJ211907.1-chr6-58692241-59617260-ed1.fasta > ./GJ211907.1-chr6-58692241-59617260-ed2.fasta
 ```
 
-4. Sort FASTA by name _NOTE: BED file exported from UCSC Table Browser are not sorted!_
+4. Sort FASTA by name (_NOTE: BED file exported from UCSC Table Browser are not sorted!_)
 ```bash
 cat ./GJ211907.1-chr6-58692241-59617260-ed2.fasta | awk '/^>/{n=1;for(i=1;i<=NF;i++){printf("%s ",$i);if(i==NF)printf"\t"}}n&&!/[^ACGTN-]/{print;n=0}' | sort -k2V - | sed -e 's/ \t/\n/' > ./GJ211907.1-chr6-58692241-59617260-ed2-sorted.fasta
 ```
@@ -47,7 +47,7 @@ find . -name "S1*.fas" -exec awk '/^>/{n++}END{print FILENAME,n}' {} >> seq-coun
 ```
 
 8. Make alignment
-`./align.sh` — in this [script](align.sh) we use [MEGACC](https://www.megasoftware.net/) with [MEGACC analysis options files](MEGACC-analysis-options-files/).
+`./align.sh` — in this [script](align.sh) we use [MEGACC](https://www.megasoftware.net/) with [MEGACC analysis options files](../MEGACC-analysis-options-files/).
 
 9. Calculate divergence rate with [Divergence rate script](https://github.com/enigene/Divergence-rate)
 ```bash
