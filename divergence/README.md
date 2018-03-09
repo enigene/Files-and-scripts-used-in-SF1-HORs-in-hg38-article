@@ -70,6 +70,20 @@ sed -i'' -e 's/_.*_//' ./SF1-HOR-divergence-rate.tsv
 ```
 
 13. Get plot with this [script](divgr-boxplot.R)
+The input file with the divergence data that is used in this script is presented in a
+compressed form, because of its large size (SF1-HOR-divergence-rate.tsv)[SF1-HOR-divergence-rate.tsv.gz].
 ```bash
 Rscript ./divgr-boxplot.R
 ```
+
+Table with the values of the geom_boxplot object used when creating the image:
+ymin|lower|middle|upper|ymax|        notchupper|         notchlower|ymin_final|ymax_final|HORnames
+----|-----|------|-----|----|------------------|-------------------|----------|----------|--------
+0.07| 0.12|  0.14| 0.16|0.22| 0.141624254732057|  0.138375745267943|      0.02|      0.22|S1C10/12H1d
+0.06| 0.12|  0.14| 0.16|0.22| 0.140186921720317|  0.139813078279683|         0|      0.26|S1C3H3d
+0.08| 0.12|  0.14| 0.15|0.19| 0.140785000637641|  0.139214999362359|      0.04|      0.25|S1CMH1d
+0.05| 0.09|   0.1| 0.12|0.16| 0.102017477977898| 0.0979825220221018|      0.03|      0.18|S1C12H3d
+   0| 0.01|  0.03| 0.04|0.08|0.0300318658792582| 0.0299681341207418|         0|      0.16|S1C10H1L
+   0| 0.01|  0.02| 0.03|0.06|0.0200368469588141| 0.0199631530411859|         0|      0.16|S1C12H1L
+   0|    0|  0.01| 0.01|0.02|0.0100123382162136|0.00998766178378644|         0|      0.16|S1C6H1L
+   0| 0.01|  0.01| 0.02|0.03|0.0100213101019785|0.00997868989802149|         0|      0.13|S1C7H1L
