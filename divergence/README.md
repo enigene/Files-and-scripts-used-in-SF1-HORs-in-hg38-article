@@ -4,8 +4,6 @@ Here are the scripts and a step-by-step description of the data preparation proc
 the calculation of the divergence for the monomers obtained from the [custom track](../track)
 of the UCSC Genome Browser.
 
-![Divergence rate of selected SF1 HORs](SF1-HOR-divergence-rate-boxplot.png)
-
 This is an example of commands that can be used to process sequences from one region
 of hg38 assembly [chr6:58692241-59617260](https://genome.ucsc.edu/cgi-bin/hgTracks?db=hg38&position=chr6%3A58692241-59617260).
 
@@ -75,6 +73,8 @@ compressed form, because of its large size [SF1-HOR-divergence-rate.tsv](SF1-HOR
 ```bash
 Rscript ./divgr-boxplot.R
 ```
+
+![Divergence rate of selected SF1 HORs](SF1-HOR-divergence-rate-boxplot.png)
 
 Table with the values of the geom_boxplot object used when creating the image:
 
