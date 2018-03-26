@@ -18,7 +18,7 @@ png(paste0("SF1-HOR-divergence-rate-boxplot.png"),
     res=300, width=2.5, height=3, units='in')
 
 p <- ggplot(dt, aes(x = reorder(HORNames, value, function(x) -median(x)),
-                    y = value)) +
+                    y = round(value, 2))) +
   geom_boxplot(varwidth = F, outlier.shape = 1, outlier.size = 0.5) +
   ylab("Divergence") +
   theme_classic() +
